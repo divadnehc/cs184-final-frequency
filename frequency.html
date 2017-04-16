@@ -71,7 +71,7 @@
 
     // load the sound
     setupAudioNodes();
-    loadSound("harder.mp3");
+    loadSound("heights.ogg");
 
 
     function setupAudioNodes() {
@@ -91,10 +91,10 @@
         // 2 channel volume analyzer
         analyser_l = context.createAnalyser();
         analyser_l.smoothingTimeConstant = 0.3;
-        analyser_l.fftSize = 512 / fft_factor;
+        analyser_l.fftSize = 1024;
         analyser_r = context.createAnalyser();
         analyser_r.smoothingTimeConstant = 0.0;
-        analyser_r.fftSize = 512 / fft_factor;
+        analyser_r.fftSize = 1024;
 
 
         // create a buffer source node
